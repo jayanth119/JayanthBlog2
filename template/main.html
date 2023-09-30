@@ -7,11 +7,12 @@
     <meta name="author" content="jayanth">
     <title>JayanthBlog</title>
     <!-- font icons -->
-    <link rel="stylesheet" href=" /static/vendors/themify-icons/css/themify-icons.css">
+    {% load static %}
+    <link rel="stylesheet" href=" {% static   'vendors/themify-icons/css/themify-icons.css' %}">
 
     <!-- Bootstrap + Dorang main styles -->
-	<link rel="stylesheet" href="/static/css/dorang.css">
-	<link rel="icon" href=" /static/imgs/data-science.png" type="image/x-icon">
+	<link rel="stylesheet" href="{% static   'css/dorang.css' %}">
+	<link rel="icon" href=" {% static   'imgs/data-science.png' %}" type="image/x-icon">
 
 
 </head>
@@ -52,7 +53,7 @@
         <div class="row mb-4">
             <div class="col-md-4">
                 <a href="{% url 'home' %}" class="overlay-img">
-                    <img src=" /static/imgs/img-1.jpg" alt="Dowload freee">  
+                    <img src=" {% static   'imgs/img-1.jpg' %}" alt="Dowload freee">  
                     <div class="overlay"></div> 
                     <div class="des">
                         <h1 class="title">Data Scientist</h1>
@@ -64,7 +65,7 @@
             </div>
             <div class="col-md-4">
                 <a href="{% url 'home' %}" class="overlay-img">
-                    <img src=" /static/imgs/img-2.jpg" alt="D 4.1e">  
+                    <img src=" {% static   'imgs/img-2.jpg' %}" alt="D 4.1e">  
                     <div class="overlay"></div> 
                     <div class="des">
                         <h1 class="title">Math + Programing </h1>
@@ -75,7 +76,7 @@
             </div>
             <div class="col-md-4">
                 <a href="{% url 'home' %}" class="overlay-img">
-                    <img src=" /static/imgs/img-3.jpg" alt="Df">  
+                    <img src=" {% static   'imgs/img-3.jpg' %}" alt="Df">  
                     <div class="overlay"></div> 
                     <div class="des">
                         <h1 class="title">Common Sense</h1>
@@ -113,32 +114,24 @@
     </div><!-- end of pre footer -->
 
     <!-- core  -->
-    <script src=" /static/vendors/jquery/jquery-3.4.1.js"></script>
-    <script src=" /static/vendors/bootstrap/bootstrap.bundle.js"></script>
+    <script src=" {% static   'vendors/jquery/jquery-3.4.1.js' %}"></script>
+    <script src=" {% static   'vendors/bootstrap/bootstrap.bundle.js' %}"></script>
 
     <!-- bootstrap affix -->
-    <script src=" /static/vendors/bootstrap/bootstrap.affix.js"></script>
+    <script src=" {% static  'vendors/bootstrap/bootstrap.affix.js' %}"></script>
 
     <!-- Dorang js -->
-    <script src= "https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src=" /static/js/dorang.js"></script>
+    <script src= "https://code.jquery.com/jquery-3.4.1.min.js' "></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js'"></script>
+    <script src=" {% static   'js/dorang.js' %}"></script>
 
-    <script>		
+    <script>	
     // setInterval(function(){
     //     $(".animate").animate({color: "red"}, "slow");
     //     $(".animate").animate({color: "#000"}, "slow");
     // },500);
-    tinymce.init({
-  selector: 'textarea',  // change this value according to your HTML
-  plugins: 'image',
-  toolbar: 'image',
-  image_list: [
-    { title: 'My image 1', value: '/static/imgs/img-1.jpg' },
-    { title: 'My image 2', value: '/static/imgs/img-1.jpg' }
-  ]
-});
+
     </script>
     <body>	
-    
+
     </body></html>
