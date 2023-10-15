@@ -1,13 +1,21 @@
 {%extends 'base.html' %}
 
 {%block title%} POST {%endblock%}
-
+{%block style%} 
+{% load static %}
+    <link rel="stylesheet" href="{% static 'css/style2.css'%}">
+    <style>
+        p{
+          font-size: 16px;
+          line-height: 2;
+      
+        }
+      </style>
+ {%endblock%}
 {%block content%}
 
 
 <div class="container-custom">
-
-
     <div class="row">
         <div class="col s12 m10">
 
@@ -21,11 +29,12 @@
             <br>
             <p>
                 {{post.content|safe}}
+               
             </p>
+            {% comment %} {{post.code}} {% endcomment %}
+        <!-- <img src="https://media.istockphoto.com/id/1448386210/photo/a-large-gray-craftsman-new-construction-house-with-a-landscaped-yard-and-leading-pathway.jpg?s=1024x1024&w=is&k=20&c=zr2ApXoNwve2CoVj3GfyaWU06ELZV4EzST6nuyOvrqU=" alt="heruko"> -->
 
-        </div>
-
-        <div class="col s12 m2">
+        <!-- <div class="col s12 m2">
 
 
             {% for cat in cats %}
@@ -56,10 +65,18 @@
             {%endfor%}
 
 
-        </div>
+        </div> -->
     </div>
 
 </div>
+<div class="heart-btn">
+    <div class="content">
+      <span class="heart"></span>
+      <span class="text">Like</span>
+      <span class="numb"></span>
+    </div>
+  </div>
+
 
 
 {%endblock%}
