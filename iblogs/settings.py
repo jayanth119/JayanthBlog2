@@ -53,7 +53,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'iblogs.wsgi.application'
 
 DATABASES = {
-    'default': dj_database_url.parse('postgresql://postgres:gJZzaiRTlcSgsNhdUXgGIHSLGjYAMrLT@viaduct.proxy.rlwy.net:55716/railway')
+    'default': dj_database_url.parse('postgresql://postgres:wbAAWoyULrbGWrzNMfUsTlHVfvosYogM@roundhouse.proxy.rlwy.net:13570/railway')
 }
 
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
