@@ -33,6 +33,7 @@ INSTALLED_APPS = [
     'material',
     'material.admin',
     'django.contrib.auth',
+    'django.contrib.admin',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',

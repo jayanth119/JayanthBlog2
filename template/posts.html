@@ -4,6 +4,8 @@
 {%block style%} 
 {% load static %}
     <link rel="stylesheet" href=" https://jayanth119.github.io/JayanthBlog/assets/css/style2.css">
+    <link rel="stylesheet" href=" https://jayanth119.github.io/JayanthBlog/assets/css/st.css">
+
     <style>
         p{
           font-size: 16px;
@@ -32,51 +34,18 @@
                
             </p>
             {% comment %} {{post.code}} {% endcomment %}
-        <!-- <img src="https://media.istockphoto.com/id/1448386210/photo/a-large-gray-craftsman-new-construction-house-with-a-landscaped-yard-and-leading-pathway.jpg?s=1024x1024&w=is&k=20&c=zr2ApXoNwve2CoVj3GfyaWU06ELZV4EzST6nuyOvrqU=" alt="heruko"> -->
 
-        <!-- <div class="col s12 m2">
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v13.0&appId=952966829805579" nonce="YOUR_NONCE"></script>
 
-
-            {% for cat in cats %}
-
-            <div class="card item" style="margin-left:10px;">
-
-                <div class="img-container">
-
-                    <img src="/media/{{cat.image}}" class="responsive-img" alt="">
-
-                </div>
-                <div class="card-content">
-
-                    <b>
-                        {{cat.title}}
-                    </b>
-
-                    <p class="truncate">{{cat.description}}</p>
-                    <div class="container center-align mt20">
-                        <a href="/category/{{cat.url}}" class="btn bg-primary">VIEW</a>
-                    </div>
-
-                </div>
-                 
-
-            </div>
-
-            {%endfor%}
-
-
-        </div> -->
     </div>
+    <br> 
+    <br>
+    <div class="fb-like" data-href="http://127.0.0.1:8000/{{post.get_absolute_url}}" data-width="" data-layout="" data-action="" data-size="" data-share="true"></div>
+<br>
+<div class="fb-comments" data-href="http://127.0.0.1:8000/{{post.get_absolute_url}}" data-width="" data-numposts="5"></div>
 
-</div>
-<div class="heart-btn">
-    <div class="content">
-      <span class="heart"></span>
-      <span class="text">Like</span>
-      <span class="numb"></span>
-    </div>
   </div>
-
 
 
 {%endblock%}

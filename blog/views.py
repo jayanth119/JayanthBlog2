@@ -1,6 +1,9 @@
 
-from django.shortcuts import render
+
 from blog.models import Post, Category 
+from django.shortcuts import render, get_object_or_404
+
+
 # from django.http import HttpResponseRedirect
 # from django.urls import reverse
 # def  get_client_id(request):
@@ -41,11 +44,11 @@ def home(request):
 def main(request):
     return render(request , 'main.html')
 
+
 def post(request, url):
-    post = Post.objects.get(url=url)
+    post = get_object_or_404(Post, url=url)
     cats = Category.objects.all()
 
-    # print(post)
     return render(request, 'posts.html', {'post': post, 'cats': cats})
 def about(request):
     return render(request , 'about.html')

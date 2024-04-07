@@ -2,7 +2,7 @@ from django.db import models
 from django.utils.html import format_html
 
 
-
+from django.urls import reverse 
 # Create your models here.
 
 # Category model
@@ -41,6 +41,8 @@ class Post(models.Model):
     # likes = models.ManyToManyField(Ipmodel , related_name='post_likes' , blank=True)
     def __str__(self):
         return self.title
+    def get_absolute_url(self):
+        return reverse('post', kwargs={'url': self.url})
     # def total_likes(self):
     #     return self.likes.count 
     
