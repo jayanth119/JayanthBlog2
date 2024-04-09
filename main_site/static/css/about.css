@@ -23,11 +23,11 @@ header {
   /* background-color: black; */
   display: flex;
 }
-.header-left-side {
+.left {
   padding: 0 0 0 90px;
   color: red ;
 }
-.header-left-side h1 {
+.left h1 {
   color: #bea060;
   line-height: 1.2em;
   font-size: 78px;
@@ -35,7 +35,7 @@ header {
   margin-bottom: 20px;
   font-weight: 400 !important;
 }
-.header-left-side h2 {
+.left h2 {
   color: #bea060;
   font-family: "Inter", sans-serif;
   font-size: 26px;
@@ -44,7 +44,7 @@ header {
   letter-spacing: 2px;
   padding: 10px;
 }
-.header-left-side p {
+.left p {
   margin-top: 5%;
   margin-bottom: 10%;
   font-family: "Inter", sans-serif;
@@ -53,7 +53,7 @@ header {
   color: #c1bfbf;
   line-height: 2;
 }
-button {
+.bed {
   padding: 20px 10px;
   border: 2px solid #bea060;
   background: transparent;
@@ -65,7 +65,7 @@ button {
   text-transform: uppercase;
   cursor: pointer;
 }
-button:hover {
+.bed:hover {
   background-color: #bea060;
   transition: 0.7s;
 }
@@ -73,13 +73,13 @@ button:hover {
   width: 97%;
   background-color: #bea060;
 }
-.header-left-side h3 {
+.left h3 {
   color: #c1bfbf;
   padding-top: 80px;
   font-family: "Inter", sans-serif;
   font-weight: 300;
 }
-.header-right-side img {
+.right img {
   width: 670px;
   height: 884px;
   margin-top: 15%;
