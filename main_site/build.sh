@@ -1,5 +1,3 @@
-
-
 #!/usr/bin/env bash
 # Exit on error
 set -o errexit
@@ -12,3 +10,9 @@ python manage.py collectstatic --no-input
 
 # Apply any outstanding database migrations
 python manage.py migrate
+
+# Create a superuser (replace 'admin', 'admin@example.com', and 'adminpass' with your desired username, email, and password)
+python manage.py shell <<EOF
+from django.contrib.auth.models import User
+User.objects.create_superuser('jayanth', 'chjayanth119@gmail.com', 'HAKUNAmatata1@')
+EOF
