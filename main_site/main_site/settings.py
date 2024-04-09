@@ -24,7 +24,7 @@ SECRET_KEY = SECRET_KEY
 from environ import DEBUG
 DEBUG = DEBUG
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
