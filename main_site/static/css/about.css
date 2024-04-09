@@ -20,12 +20,12 @@
 header {
   width: 100%;
   height: 160vh;
-  background-color: black;
+  /* background-color: black; */
   display: flex;
 }
 .header-left-side {
   padding: 0 0 0 90px;
-  color: white;
+  color: red ;
 }
 .header-left-side h1 {
   color: #bea060;
