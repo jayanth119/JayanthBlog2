@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="this is blog website ">
+    <meta name="author" content="jayanth">
+    <title>JayanthBlog</title>
+    <!-- font icons -->
+    {% load static %}
+    <link rel="stylesheet" href="../static/vendors/themify-icons/css/themify-icons.css">
+
+    <!-- Bootstrap + Dorang main styles -->
+	<link rel="stylesheet" href="../static/css/dorang.css">
+    <link rel="stylesheet" href="../static/css/about.css"> 
+	<link rel="icon" href="../static/imgs/data-science.png " type="image/x-icon">
+
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id=" home/" class="dark-theme">
+    
+
+    <div class="theme-selector">
+        <a href="javascript:void(0)" class="spinner">
+            <i class="ti-paint-bucket"></i>
+        </a>
+        <div class="body">
+            <a href="javascript:void(0)" class="light"></a>
+            <a href="javascript:void(0)" class="dark"></a>
+        </div>
+    </div>  
+
+    <!-- page header -->
+    <header class="header">
+        <div class="overlay"></div>
+        <div class="header-content">
+            <h1 class="header-title">What Happens Tomorrow?</h1>
+            <p class="header-subtitle"> Feel the Feel </p>
+
+        </div>
+    </header><!-- end of page header -->
+
+ <!-- owner details start -->
+ <header>
+    <div class="header-left-side">
+      <h1>
+        Jayanth <br />
+        Chukka
+      </h1>
+      <h2>- DATA SCIENTIST</h2>
+      <p>
+        Hey! I started my career in 2019. I am interested in solving challenging problems. 
+      </p>
+      <button>Python</button>
+      <button>MachineLearning</button>
+      <br />
+      <br />
+      <button>DeepLearning</button>
+      <button>Flutter</button> <br />
+      <br />
+      <button>Django</button>
+      <button>Nodejs</button> <br />
+      <br />
+      <button>JavaScript</button>
+      <button>PHP</button> <br />
+      <br />
+      <button> Java </button>
+      <br />
+      <br>
+      
+      <a href="{% url 'all_projects' %}"> <button class="btn" >See All </button></a>
+    </div>
+    <div class="header-right-side">
+      <img src="../static/imgs/client-img1.png" alt="img" />
+    </div>
+  </header>
+
+  
+<!-- owner details end  -->
+ <!-- page container -->
+    <div class="container page-container">
+        <div class="col-md-10 col-lg-8 m-auto">
+            <h6 class="title mb-4">Explore The My Blog  World</h6>
+            <p class="mb-7"> This  website blogs  all about to know the experience of my journey , my struggle and my knowledge in the field of Data Science 
+            </p>
+        </div>  
+        
+
+        <!-- row -->
+        <div class="row mb-4">
+            <div class="col-md-4">
+                <a href="{% url 'home' %}" class="overlay-img">
+                    <img src="../static/imgs/img-1.jpg" alt="Dowload freee">  
+                    <div class="overlay"></div> 
+                    <div class="des">
+                        <h1 class="title">Data Scientist</h1>
+                        <h6 class="subtitle">Unleashing the power of data to unravel the mysteries of the universe! 📊🔍 #DataScienceMagic</p>
+                        <p>Why did the data scientist go broke? Because he lost all his cents in the normalization process!
+                        </p>
+                    </div>          
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="{% url 'home' %}" class="overlay-img">
+                    <img src="../static/imgs/img-2.jpg" alt="D 4.1e">  
+                    <div class="overlay"></div> 
+                    <div class="des">
+                        <h1 class="title">Math + Programing </h1>
+                        <h6 class="subtitle">When math and programming come together, magic happens in lines of code!</p>
+                        <p>Why did the mathematician become a programmer? Because they heard it's a great way to solve problems 'byte' by 'byte'!</p>
+                    </div>          
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="{% url 'home' %}" class="overlay-img">
+                    <img src="../static/imgs/img-3.jpg" alt="Df">  
+                    <div class="overlay"></div> 
+                    <div class="des">
+                        <h1 class="title">Common Sense</h1>
+                        <h6 class="subtitle">Embracing my inner scarecrow – taking a stand and being outstanding in your field! 😄 #CodeLife"</p>
+                        <p>Why did the scarecrow win an award? Because he was outstanding in his field!</p>
+                    </div>          
+                </a>
+            </div>          
+        </div><!-- end of row -->
+
+
+
+        <!-- <a href="#">Load More <i class="ti-angle-double-right angle"></i></a>
+
+    
+
+        <a href="#">All Posts <i class="ti-angle-double-right angle"></i></a> -->
+
+
+  
+    <!--footer & pre footer -->
+    <div class="contact-section">
+        <div class="overlay"></div>
+
+            <!-- footer -->
+            <footer class="footer">
+                <p class="infos">&copy; <script>document.write(new Date().getFullYear())</script>, Made  <i class="ti-heart text-danger"></i> by <a href="{% url 'Jayanth' %}">Jayanth</a></p>       
+                <span>|</span>  
+                <div class="links">
+                    <a href="https://www.linkedin.com/in/jayanth-ch-374550253/">Linkedin</a>
+                    <a href="https://www.instagram.com/1_j_a_y_a_n_t_h_1_1_9/">Instagram</a>
+                    <a href="https://www.facebook.com/jayanth.ch.7161">Facebook </a>
+                </div>
+            </footer><!-- end of footer -->
+
+        </div><!-- end of container -->
+    </div><!-- end of pre footer -->
+
+    <!-- core  -->
+    <script src="../static/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="../static/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap affix -->
+    <script src="../static/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Dorang js -->
+    <script src= "https://code.jquery.com/jquery-3.4.1.min.js' "></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js'"></script>
+    <script src="../static/js/dorang.js"></script>
+
+    <script>	
+    // setInterval(function(){
+    //     $(".animate").animate({color: "red"}, "slow");
+    //     $(".animate").animate({color: "#000"}, "slow");
+    // },500);
+
+    </script>
+    <body>	
+
+    </body></html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> {%block title%} {%endblock%} </title>
+    {% block style %} {% endblock %}
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    {% load static %}
+    <link rel="stylesheet" href="../static/css/st.css">
+    <link rel="stylesheet" href="../static/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../static/css/owl.theme.default.min.css'%">
+    <link rel="icon" href="../static/imgs/data-science.png" type="image/x-icon">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        $(document).ready(function(){
+          $('.content').click(function(){
+            $('.content').toggleClass("heart-active")
+            $('.text').toggleClass("heart-active")
+            $('.numb').toggleClass("heart-active")
+            $('.heart').toggleClass("heart-active")
+          });
+        });
+      </script>
+      <style>
+        @import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+.heart-btn {
+    position: unset;
+    /* {% comment %} top: 50%;
+    left: 70%; {% endcomment %}
+    width: 143px;
+    transform: translate(100%,-50%); */
+}
+.content{
+  padding: 13px 16px;
+  display: flex;
+  border: 2px solid #eae2e1;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.content.heart-active{
+  border-color: #f9b9c4;
+  background: #fbd0d8;
+}
+.heart{
+  position: absolute;
+  background: url("../static/imgs/like.png") no-repeat;
+  background-position: left;
+  background-size: 2900%;
+  height: 90px;
+  width: 90px;
+  /*top: 50%;*/
+  left: 15%; 
+  transform: translate(-50%,-50%);
+}
+.text{
+  font-size: 21px;
+  margin-left: 30px;
+  color: grey;
+  font-family: 'Montserrat',sans-serif;
+}
+.numb:before{
+  content: '69';
+  font-size: 21px;
+  margin-left: 7px;
+  font-weight: 600;
+  color: #9C9496;
+  font-family: sans-serif;
+}
+.numb.heart-active:before{
+  content: '70';
+  color: #000;
+}
+.text.heart-active{
+  color: #000;
+}
+.heart.heart-active{
+  animation: animate .8s steps(28) 1;
+  background-position: right;
+}
+@keyframes animate {
+  0%{
+    background-position: left;
+  }
+  100%{
+    background-position: right;
+  }
+}
+      </style>
+
+</head>
+
+<body>
+
+{%include 'header.html' %}
+
+{%block content %}
+
+{%endblock%}
+
+{% include 'footer.html' %}
+
+<script>
+    M.AutoInit();
+
+
+
+
+
+
+
+
+
+</script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script  src="../static/js/owl.carousel.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+  $(".owl-carousel").owlCarousel(
+  {
+    loop: true,
+
+      autoplay: true,
+
+      nav: false,
+      responsiveClass: true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:3,
+            nav:false
+        },
+        1000:{
+            items:3,
+            nav:true,
+            loop:false
+        }
+    }
+
+  }
+  );
+});
+
+
+
+
+</script>
+
+</body>
+</html>
